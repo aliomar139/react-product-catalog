@@ -1,28 +1,48 @@
 # React Product Catalog
 
-A modern React application showcasing clean component architecture, reusable UI patterns, and structured state management.  
-The project emphasizes clarity, maintainability, and a thoughtfully designed user interface.
+**A product catalog built as a React lab exercise: component state, lists, filtering, controlled
+forms, and cart totals.**
 
-## ✨ Features
-- Component-based architecture
-- Reusable and composable React components
-- Product listing with pricing and optional discounts
-- Search and category-based filtering
-- Shopping cart with item count and total calculation
-- Add new products through a controlled form
-- Custom coffee-themed UI with flat, minimal styling
+<p>
+  <img alt="React" src="https://img.shields.io/badge/React_18-20232A?style=flat-square&logo=react&logoColor=61DAFB">
+  <img alt="Vite" src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white">
+</p>
 
-## 🛠 Tech Stack
-- React 18
-- Vite
-- JavaScript (ES6+)
-- CSS (custom theme)
+## What it covers
 
-## 🚀 Getting Started
+- Product cards rendered from state, with optional discount pricing
+- Search and category filtering over the same list
+- A cart summary tracking item count and running total, discounted price included
+- Adding new products through a controlled form
+- A flat, minimal theme in a single stylesheet
 
-Clone the repository and run the project locally:
+## Tech
+
+React 18 · Vite 5 · JavaScript (ES6+) · CSS
+
+## Running it
+
+The Vite project lives in `react-labs-5-7/`:
 
 ```bash
+cd react-labs-5-7
 npm install
 npm run dev
-s
+```
+
+Vite prints the local URL, by default <http://localhost:5173>.
+
+## Layout
+
+```
+react-labs-5-7/
+├── src/
+│   ├── App.jsx                 catalog state and composition
+│   ├── components/
+│   │   ├── ProductCard.jsx
+│   │   ├── SearchBar.jsx
+│   │   ├── AddProductForm.jsx
+│   │   └── CartSummary.jsx
+│   └── styles/lab-theme.css
+└── ../React_Lab_Ch05-07_Student.md   the lab brief this was built from
+```
